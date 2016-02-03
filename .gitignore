@@ -26,6 +26,29 @@ build/Release
 # Dependency directory
 node_modules
 
+*.csv
+*.dat
+*.iml
+*.log
+*.out
+*.pid
+*.seed
+*.sublime-*
+*.swo
+*.swp
+*.tgz
+*.xml
+.DS_Store
+.idea
+.project
+.strong-pm
+coverage
+node_modules
+/node_modules
+build
+/build
+npm-debug.log
+
 
 /node_modules/
 
