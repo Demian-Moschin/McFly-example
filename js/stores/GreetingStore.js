@@ -14,7 +14,7 @@ var updateGreet = function (data) {
 
 
 
-var ProductStore = McFly.createStore({
+var GreetingStore = McFly.createStore({
     getGreetings: function () {
         return greet;
     }
@@ -22,14 +22,14 @@ var ProductStore = McFly.createStore({
 }, function (payload) {
     if (payload.actionType === 'GREET') {
         addGreeting(payload.data);
-        ProductStore.emitChange();
+        GreetingStore.emitChange();
     }
 
     if (payload.actionType === 'UPDATE_GREET') {
         updateGreet(payload.data);
-        ProductStore.emitChange();
+        GreetingStore.emitChange();
     }
 
 });
 
-module.exports = ProductStore;
+module.exports = GreetingStore;

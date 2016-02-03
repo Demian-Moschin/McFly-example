@@ -1,11 +1,7 @@
 'use strict';
 
 var React = require('react');
-var App = require('./components/App.jsx');
-
-var WebAPIUtils = require('./utils/WebAPIUtils');
-
-WebAPIUtils.getAllProducts();
+var App = require('./components/App');
 
 React.render(
     React.createElement(App, null),

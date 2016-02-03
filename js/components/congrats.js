@@ -4,12 +4,12 @@
 'use strict';
 
 var React = require('react');
-var ProductStore = require('../stores/ProdStore');
-var actions = require('../actions/ProductActions');
+var GreetingStore = require('../stores/GreetingStore');
+var actions = require('../actions/GreetingActions');
 
 
 var Congrats = React.createClass({
-    mixins: [ProductStore.mixin],
+    mixins: [GreetingStore.mixin],
 
     getInitialState: function () {
         return {
@@ -45,7 +45,7 @@ var Congrats = React.createClass({
     storeDidChange: function () {
         console.log('didChange the store');
         this.setState({
-                greet: ProductStore.getGreetings()
+                greet: GreetingStore.getGreetings()
             }
         );
     },
